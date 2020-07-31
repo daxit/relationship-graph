@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body onload="setup();">
+  <div class="rel-graph" id="rel-graph">
+    <div class="rel-graph__tools">
+      <label for="finder">Find Term: </label>
+      <input type="text" id="finder" name="finder" size="12">
+    </div>
+    <ul class="rel-graph__list" id="list-sections"></ul>
+    <ul class="rel-graph__list rel-graph__list--terms" id="list-terms-reg"></ul>
+    <ul class="rel-graph__list rel-graph__list--terms" id="list-terms-biz"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

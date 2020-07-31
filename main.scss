@@ -1,0 +1,92 @@
+body {
+  background: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rel-graph {
+  background: #fff;
+  max-width: 1000px;
+  // max-height: 700px;
+  // overflow-y: scroll;
+  position: fixed;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px 50px 30px 50px;
+  display: grid;
+  grid-template-columns: 25% calc(25% + 10px) calc(50% - 10px);
+  grid-template-rows: 50px auto;
+  position: relative;
+  // align-items: center;
+}
+
+.rel-graph__tools {
+  grid-column: 1 / 4;
+}
+
+.rel-graph__list {
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  grid-row-start: 2;
+}
+.rel-graph__list--terms {
+  text-align: right;
+}
+
+.rel-graph__item-section {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  color: #343334;
+  margin-bottom: 60px;
+  transition: opacity .5s;
+  // border-left: solid #949394 20px;
+}
+.rel-graph__item-term {
+  position: relative;
+  display: block;
+  padding-right: 40px;
+  color: #343334;
+  margin-bottom: 20px;
+  transition: opacity .5s;
+}
+
+.rel-graph__tab-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  background-color: #595859;
+}
+.rel-graph__tab-term {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  background-color: #949394;
+}
+.rel-graph__tab-term--biz {
+  background-color: #0062ff;
+}
+.rel-graph__tab-term--asset {
+  background-color: #10dcc7;
+}
+
+.rel-graph__map {
+  position: absolute;
+  left: 70px;
+  z-index: -1;
+  transition: opacity .5s;
+}
+.rel-graph__map--term {
+  left: initial;
+  right: 70px;
+}
+
+.rel-graph--hidden {
+  opacity: 0.25;
+}
